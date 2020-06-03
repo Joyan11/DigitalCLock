@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Bungee Inline',  Helvetica;
+}
+
+body{
+    background-image:url(https://images.pexels.com/photos/427900/pexels-photo-427900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#clock{
+    position:absolute;
+    top:30%;
+    left:25%;
+    background: none;
+
+}
+
+#clock #time{
+    font-size: 90px;
+    color: white;
+}
+
+#clock #date{
+    margin-left: 30%;
+    font-size: 30px;
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #clock #time{
+      font-size:43px;
+    }
+    #clock{
+        top:36%;
+      left:10%;
+    }
+    #clock #date{
+        margin-top: 10px;
+        font-size: 20px;
+        margin-left: 20%;
+    }
+    html{
+        background-image: url(https://images.pexels.com/photos/2411688/pexels-photo-2411688.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        opacity:5.0;
+        height: 100%;
+        overflow: hidden;
+    }
+        
+  }
