@@ -40,7 +40,12 @@ const clock = () => {
     }
     if (h > 12) {
         h = h - 12;
-        document.getElementById('hours').textContent = `0${h} `;
+        if (h < 10) {
+            document.getElementById('hours').textContent = `0${h} `;
+        } else {
+            document.getElementById('hours').textContent = h;
+        }
+
         document.getElementById('ampm').textContent = 'PM';
 
     }
